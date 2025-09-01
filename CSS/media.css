@@ -1,0 +1,97 @@
+/* X-Small devices (portrait phones, less than 576px) */
+
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 400px){
+    .head .icon{
+        margin-left: -50px;
+    }
+    .head .minuo{
+        margin-right: -50px;
+    }
+    
+}   
+@media (max-width: 646px){
+
+    .serv_section .box {
+        margin-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .serv_section i {
+        margin-bottom: 30px;
+    }
+    .serv_section .text :first-child {
+        margin-bottom: 5px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 699px) {
+    .portfolio .port .box{
+        display: flex;
+        justify-content: center;
+    }
+    .portfolio .port{
+        margin-left: 0;
+    }
+}
+@media (max-width: 835px) {
+    
+    .serv_section {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(225px, auto));
+    }
+    .serv_section .iamge {
+        display: none;
+    }
+    
+
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+    /* .content{
+        margin-left: 10%;
+        margin-right: 10%;
+    } */
+    .fitchers{
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+/* x-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .content{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .about-sec .text .img::after{
+        content: "";
+        position: absolute;
+        background-color: #eee;
+        width: 5%;
+        height: 35%;
+        left: 210px;
+        margin-top: -15px;
+        z-index: -1;
+    }
+    .about-sec .text .img::before{
+        content: "";
+        position: absolute;
+        border-left: 40px solid rgb(7, 196, 133);
+        border-bottom: 35px solid rgb(7, 196, 133);
+        width: 50px;
+        height: 125px;
+        left: 350px;
+        margin-top: -15px;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}
